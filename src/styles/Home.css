@@ -1,0 +1,25 @@
+.homeContainer {
+    padding-top: 20vh;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    row-gap: 30vh;
+}
+
+.homeContainer h1 {
+    align-self: center;
+    font-size: 3.5rem;
+    text-transform: uppercase;
+}
+
+.menuContainer {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+}
+
+.menuContainer h2 {
+    font-size: 2rem;
+    text-transform: uppercase;
+}

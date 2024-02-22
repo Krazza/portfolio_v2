@@ -1,15 +1,16 @@
 import React from "react";
+import "../styles/Home.css";
 
 function Home () {
     return(
-        <main>
-            <h1>{"Which interests you?"}</h1>
-            <div>
+        <main className="homeContainer">
+            <h1>{"Which portfolio interests you?"}</h1>
+            <div className="menuContainer">
                 <section>
-                    <h2>{"web portfolio"}</h2>
+                    <h2>{"web"}</h2>
                 </section>
                 <section>
-                    <h2>{"game portfolio"}</h2>
+                    <h2>{"game"}</h2>
                 </section>
             </div>
         </main>

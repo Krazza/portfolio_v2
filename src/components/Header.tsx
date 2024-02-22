@@ -1,13 +1,14 @@
 import React from "react";
+import { Link } from "react-router-dom";
+import "../styles/Header.css";
 
 function Header () {
     return(
         <header>
-            <ul>
-                <li>{"Home"}</li>
-                <li>{"Web"}</li>
-                <li>{"Game"}</li>
-                <li>{"Blog (WIP)"}</li>
+            <ul className="horizontalMenu">
+                <li><Link to="/">{"Web"}</Link></li>
+                <li><Link to="/">{"Home"}</Link></li>
+                <li><Link to="/">{"Game"}</Link></li>
             </ul>
         </header>
     )
