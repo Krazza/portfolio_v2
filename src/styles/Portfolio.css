@@ -1,0 +1,75 @@
+.portfolioContainer {
+    display: flex;
+    flex-direction: column;
+    padding: 10vh 10vw 0 10vw;
+    row-gap: 5em;
+}
+
+.portfolioContainer h2 {
+    font-size: 2.5rem;
+    font-family: Oswald, sans-serif;
+    color: #297C50;
+}
+
+.headingWrap {
+    align-items: center;
+    padding-bottom: 0.83em;
+    display: flex;
+    position: relative;
+}
+
+.headingUnderline {
+    width: 100%;
+    height: 0.31em;
+    position: absolute;
+    background-color: #297C50;
+    bottom: 0;
+}
+
+.showcase {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    row-gap: 3em;
+    column-gap: 3em;
+}
+
+.project {
+    width: 40em;
+    height: 23em;
+    transition: 0.2s;
+    border-radius: 8px;
+    padding: 9px;
+    background-color: #f5f4f4;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    justify-self: center;
+}
+
+.project h3 {
+    font-family: Roboto,sans-serif;
+    font-size: 1.5rem;
+}
+
+.project p {
+    font-family: Assistant, sans-serif;
+}
+
+.project:hover {
+    box-shadow: 10px 10px 0px 4px rgba(41,124,80,1);
+    transform: translate(0, -10px);
+}
+
+.projectDetails {
+    display: flex;
+    column-gap: 1em;
+    align-items: center;
+}
+
+.projectscr {
+    max-width: 100%;
+    height: auto;
+    background-color: #959595;
+
+}

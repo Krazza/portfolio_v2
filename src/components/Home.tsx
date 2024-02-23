@@ -1,6 +1,8 @@
 import React from "react";
 import "../styles/Home.css";
 
+import Portfolio from "./Portfolio";
+
 function Home () {
     return(
         <main className="homeContainer">
@@ -13,6 +15,7 @@ function Home () {
                     <h2>{"game"}</h2>
                 </section>
             </div>
+            <Portfolio/>
         </main>
     )
 }
