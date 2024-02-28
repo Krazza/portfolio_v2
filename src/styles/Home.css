@@ -1,12 +1,24 @@
 .homeContainer {
+    height: 300vh;
+    position: relative;
+    background-color: azure;
+
     padding-top: 20vh;
     display: flex;
     flex-direction: column;
     row-gap: 30vh;
 }
 
-.homeContainer h1 {
-    align-self: center;
+.horizontalContainer {
+    height: 100vh;
+    position: sticky;
+    top: 0;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+
+.horizontalContainer h1 {
     font-size: 3.5rem;
     text-transform: uppercase;
 }
