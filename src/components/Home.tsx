@@ -14,19 +14,23 @@ function Home () {
 
     return(
         <main ref={targetRef} className="homeContainer">
-            <motion.div style={{ x }} className="horizontalContainer">
-                <Portfolio/>
-                <h1>{"Which portfolio interests you?"}</h1>
-                <div className="menuContainer">
-                    <section>
-                        <h2>{"web"}</h2>
-                    </section>
-                    <section>
-                        <h2>{"game"}</h2>
-                    </section>
-                </div>
-                <Portfolio/>
-            </motion.div>
+            <div className="horizontalContainer">
+                <motion.div style={{ x }} className="motionClass">
+                    <Portfolio/>
+                    <div>
+                        <h1>{"Which portfolio interests you?"}</h1>
+                        <div className="menuContainer">
+                            <section>
+                                <h2>{"web"}</h2>
+                            </section>
+                            <section>
+                                <h2>{"game"}</h2>
+                            </section>
+                        </div>
+                    </div>
+                    <Portfolio/>
+                </motion.div>
+            </div>
         </main>
     )
 }

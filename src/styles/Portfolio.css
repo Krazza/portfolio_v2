@@ -28,6 +28,7 @@
 
 .showcase {
     display: grid;
+    width: 80vw;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     row-gap: 3em;
@@ -71,5 +72,5 @@
     max-width: 100%;
     height: auto;
     background-color: #959595;
-
 }
+
