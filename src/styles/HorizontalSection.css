@@ -1,5 +1,7 @@
 .sectionContainer {
     height: 300vh;
+    width: 100vw;
+    max-width: 100%;
     position: relative;
     background-color: azure;
 
@@ -25,4 +27,5 @@
 
 .motionClass {
     display: flex;
+    column-gap: 5vw;
 }

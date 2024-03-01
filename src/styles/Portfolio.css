@@ -1,7 +1,6 @@
 .portfolioContainer {
     display: flex;
     flex-direction: column;
-    padding: 10vh 10vw 0 10vw;
     row-gap: 5em;
 }
 
