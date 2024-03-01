@@ -1,39 +1,21 @@
 .homeContainer {
-    height: 300vh;
-    position: relative;
-    background-color: azure;
-
-    padding-top: 20vh;
     display: flex;
     flex-direction: column;
-    row-gap: 30vh;
+    align-items: center;
+    background-color: azure;
 }
 
-.horizontalContainer {
-    height: 100vh;
-    position: sticky;
-    top: 0;
+.greetings {
     display: flex;
     align-items: center;
-    overflow: hidden;
+    justify-content: space-between;
+    width: 60vw;
+    height: 80vh;
+    background-color: khaki;
+    margin-top: 10vh;
+    margin-bottom: 10vh;
 }
 
-.horizontalContainer h1 {
-    font-size: 3.5rem;
-    text-transform: uppercase;
-}
-
-.menuContainer {
-    display: flex;
-    width: 100%;
-    justify-content: space-around;
-}
-
-.menuContainer h2 {
-    font-size: 2rem;
-    text-transform: uppercase;
-}
-
-.motionClass {
-    display: flex;
+.greetings img {
+    width: 40em;
 }

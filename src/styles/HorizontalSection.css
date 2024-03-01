@@ -1,0 +1,28 @@
+.sectionContainer {
+    height: 300vh;
+    position: relative;
+    background-color: azure;
+
+    display: flex;
+    flex-direction: column;
+    row-gap: 30vh;
+}
+
+.scrollable {
+    height: 100vh;
+    position: sticky;
+    top: 0;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    background-color: burlywood;
+}
+
+.scrollable h1 {
+    font-size: 3.5rem;
+    text-transform: uppercase;
+}
+
+.motionClass {
+    display: flex;
+}
