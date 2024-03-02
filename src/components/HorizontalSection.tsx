@@ -9,7 +9,7 @@ function HorizontalSection() {
         target: targetRef,
     });
 
-    const x = useTransform(scrollYProgress, [0, 1], ["5%", "-50%"])
+    const x = useTransform(scrollYProgress, [0, 1], ["0%", "-51.55%"])
     return(
     <section ref={targetRef} className="sectionContainer">
         <div className="scrollable">

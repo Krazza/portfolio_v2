@@ -2,6 +2,7 @@ import React from "react";
 import "../styles/Home.css";
 import { teamBuildPic } from "../util/Content";
 import HorizontalSection from "./HorizontalSection";
+import About from "./About";
 
 function Home () {
 
@@ -9,6 +10,7 @@ function Home () {
     <div className="homeContainer">
         <Greetings/>
         <HorizontalSection/>
+        <About/>
     </div>
     )
 }

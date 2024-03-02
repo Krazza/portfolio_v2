@@ -27,5 +27,6 @@
 
 .motionClass {
     display: flex;
-    column-gap: 5vw;
+    column-gap: 20vw;
+    margin: 0 10vw 0 10vw;
 }
