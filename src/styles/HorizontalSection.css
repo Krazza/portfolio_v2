@@ -3,7 +3,6 @@
     width: 100vw;
     max-width: 100%;
     position: relative;
-    background-color: azure;
 
     display: flex;
     flex-direction: column;
@@ -17,7 +16,6 @@
     display: flex;
     align-items: center;
     overflow: hidden;
-    background-color: burlywood;
 }
 
 .scrollable h1 {
@@ -27,6 +25,13 @@
 
 .motionClass {
     display: flex;
-    column-gap: 20vw;
+    column-gap: 9.3vw;
     margin: 0 10vw 0 10vw;
 }
+
+.borderP {
+    height: 50vh;
+    border-right: 2px solid #000;
+    align-self: center;
+}
+

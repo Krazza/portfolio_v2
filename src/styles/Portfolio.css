@@ -8,7 +8,8 @@
 .portfolioContainer h2 {
     font-size: 2.5rem;
     font-family: Oswald, sans-serif;
-    color: #297C50;
+    font-weight: 400;
+    color: #000;
 }
 
 .headingWrap {
@@ -20,15 +21,15 @@
 
 .headingUnderline {
     width: 100%;
-    height: 0.31em;
+    height: 2px;
     position: absolute;
-    background-color: #297C50;
+    background-color: #000;
     bottom: 0;
 }
 
 .showcase {
     display: grid;
-    width: 80vw;
+    width: fit-content;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     row-gap: 3em;

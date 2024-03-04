@@ -1,6 +1,6 @@
 import React from "react";
 import "../styles/Home.css";
-import { teamBuildPic } from "../util/Content";
+import { greetPic } from "../util/Content";
 import HorizontalSection from "./HorizontalSection";
 import About from "./About";
 
@@ -18,11 +18,24 @@ function Home () {
 function Greetings() {
     return(
     <div className="greetings">
-        <div>
-            <h1>{"Vladislav Emerson Muondo"}</h1>
-            <h3>{"yap yap yap yap yap yap yap yap yap"}</h3>
+        <div className="textbox">
+            <section><h1>{"Vladislav Emerson Muondo"}</h1>
+            <h2>{"Software Developer based in Helsinki, Finland"}</h2></section>
+            
+            <img alt={greetPic.alt} src={greetPic.pic}/>
         </div>
-        <img alt={teamBuildPic.alt} src={teamBuildPic.pic}/>
+        <div className="border"/>
+        <div className="menu">
+            <h2>
+                {"Game Portfolio"}
+            </h2>
+            <h2>
+                {"Web Portfolio"}
+            </h2>
+            <h2>
+                {"Details"}
+            </h2>
+        </div>
     </div>
     )
 }
