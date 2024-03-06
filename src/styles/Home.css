@@ -10,64 +10,51 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 80vw;
+    width: 60vw;
     height: 80vh;
     margin: 10vh 0 10vh 0;
-    border-top: 2px solid #000;
 }
 
 .greetings img {
-    width: 55em;
+    width: 40em;
+    border-radius: 12px;
 }
 
-.textbox {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    row-gap: 8vh;
-    align-items: start;
-    height: 80%;
+.deets{
     width: 50%;
 }
 
-.textbox img {
-    width: 80%;
-    height: auto;
-    border-radius: 16px;
-}
-
-.textbox h1{
-    font-size: 4rem;
-    font-weight: 400;
-}
-
-.textbox h2 {
-    font-size: 1.5rem;
-    font-family: "Roboto", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-}
-
-.textbox h3 {
-    font-size: 1.2rem;
-    font-family: "Roboto", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    text-decoration: underline solid #000 2px;
-}
-
-.menu {
-    width: 50%;
-    row-gap: 5vh;
+.title {
     display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    row-gap: 1vh;
+    margin-bottom: 3vh;
 }
 
-.menu h2 {
-    font-size: 3rem;
-    font-family: Oswald, sans-serif;
-    font-weight: 400;
-    font-style: normal;
+.title h1, h3 {
+    font-family: "Inter", sans-serif;
+}
+
+.title h1 {
+    font-size: 3.5rem;
+}
+
+.title h3 {
+
+}
+
+.textBorder {
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+    border-top: 2px solid #000;
+    width: 25%;
+}
+
+.greetings p {
+    font-size: 1.3rem;
+    font-family: "Assistant", sans-serif;
+    font-weight: 500;
+    width: 95%;
 }
