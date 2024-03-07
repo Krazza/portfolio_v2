@@ -9,8 +9,8 @@
 .greetings {
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    width: 60vw;
+    column-gap: 5vw;
+    width: 65vw;
     height: 80vh;
     margin: 10vh 0 0 0;
 }
@@ -22,7 +22,7 @@
 }
 
 .deets{
-    width: 50%;
+    width: 55%;
 }
 
 .title {
@@ -31,7 +31,6 @@
     align-items: flex-start;
     flex-direction: column;
     row-gap: 1vh;
-    margin-bottom: 3vh;
 }
 
 .title h1, h3 {
@@ -47,10 +46,10 @@
 }
 
 .textBorder {
-    margin-top: 2vh;
-    margin-bottom: 2vh;
-    border-top: 2px solid #000;
-    width: 25%;
+    margin-top: 3vh;
+    margin-bottom: 3vh;
+    border-top: 4px solid #000;
+    width: 9vw;
 }
 
 .greetings p {
@@ -60,13 +59,28 @@
     width: 95%;
 }
 
-.container {
+.heroContainer {
     display: flex;
     flex-direction: column;
+    height: 100vh;
 }
 
 .tie{
     align-self: center;
     font-family: "Inter", sans-serif;
-    
+}
+
+.buttons {
+    display: flex;
+    column-gap: 1vw;
+    margin-top: 2vh;
+}
+
+.contactButton, .cvButton {
+    height: 4em;
+    width: 12em;
+    font-family: "Inter", sans-serif;
+    border-radius: 6px;
+    font-weight: bold;
+    font-size: 1rem;
 }

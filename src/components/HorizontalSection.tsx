@@ -15,7 +15,6 @@ function HorizontalSection() {
         <div className="scrollable">
             <motion.div style={{ x }} className="motionClass">
                 <Portfolio/>
-                <div className="borderP"/>
                 <Portfolio/>
             </motion.div>
         </div>

@@ -2,5 +2,28 @@
     height: 60vh;
     width: 100%;
     display: flex;
+    align-items: center;
+    justify-content: center;
     background-color: cornsilk;
+}
+
+.about h2 {
+    font-size: 3rem;
+    align-self: flex-start;
+}
+
+.aboutInfoBox {
+    display: flex;
+    flex-direction: column;
+    width: 65vw;
+    height: 100%;
+    font-size: 1.3rem;
+    font-family: "Assistant", sans-serif;
+    font-weight: 500;
+}
+
+.aboutInfoBox section {
+    display: flex;
+    flex-direction: column;
+    row-gap: 2.5vh;
 }
