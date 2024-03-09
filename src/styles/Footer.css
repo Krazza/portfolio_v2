@@ -4,3 +4,34 @@ footer {
     align-items: center;
     height: 40vh;
 }
+
+footer h3 {
+    font-size: 1.4rem;
+}
+
+footer section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 5vh;
+}
+
+.iconContainer {
+    display: flex;
+    column-gap: 1vw;
+}
+
+.iconContainer a {
+    text-decoration: none;
+    color: #000; 
+}
+
+.appIcon {
+    height: auto;
+    width: 5em;
+}
+
+.notificationPopUp {
+    font-family: "Inter", sans-serif;
+    font-weight: bold;
+}

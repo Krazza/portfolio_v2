@@ -5,7 +5,7 @@ function About () {
     return (
         <div className="about">
             <div className="aboutInfoBox">
-                <h2>{"About me"}</h2>
+                <h2>{"About me ✏️"}</h2>
                 <div className="textBorder"/>
                 <section>
                     <p>{"I was born in Saint-Petersburg, Russia, and ever since middle school I constantly tinkered with software. My software pursuit started with BASIC during highschool, transitioned to studying C# and C++ during university, and lead to visual programming using Blueprints in Unreal Engine at my first software development job."}</p>
