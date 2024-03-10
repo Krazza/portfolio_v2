@@ -3,6 +3,19 @@ import { motion, useTransform, useScroll } from "framer-motion";
 import Portfolio from "./Portfolio";
 import "../styles//HorizontalSection.css";
 
+export type ProjectProps = {
+    img : string,
+    alt : string,
+    projectName : string,
+    live? : string,
+    youtube? : string,
+    github? : string
+}
+
+export type PortfolioProps = {
+    name : string
+}
+
 function HorizontalSection() {
     const targetRef = useRef<HTMLDivElement | null>(null);
     const { scrollYProgress } = useScroll({
@@ -14,8 +27,8 @@ function HorizontalSection() {
     <section ref={targetRef} className="sectionContainer">
         <div className="scrollable">
             <motion.div style={{ x }} className="motionClass">
-                <Portfolio/>
-                <Portfolio/>
+                <Portfolio name="Game Portfolio"/>
+                <Portfolio name="Web portfolio"/>
             </motion.div>
         </div>
     </section>

@@ -3,10 +3,12 @@ footer {
     justify-content: center;
     align-items: center;
     height: 40vh;
+    background-color: var(--darkBlue);
 }
 
 footer h3 {
     font-size: 1.4rem;
+    color: var(--beige);
 }
 
 footer section {
@@ -34,4 +36,16 @@ footer section {
 .notificationPopUp {
     font-family: "Inter", sans-serif;
     font-weight: bold;
+}
+
+.ln {
+    color: var(--beige)
+}
+
+.inst {
+    color: var(--orange)
+}
+
+.dc {
+    color: var(--cyan);
 }

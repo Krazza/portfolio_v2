@@ -7,9 +7,9 @@
 
 .portfolioContainer h2 {
     font-size: 2.5rem;
-    font-family: Oswald, sans-serif;
-    font-weight: 400;
-    color: #000;
+    font-family: "Inter", sans-serif;
+    font-weight: 600;
+    color: var(--beige)
 }
 
 .headingWrap {
@@ -23,7 +23,7 @@
     width: 100%;
     height: 4px;
     position: absolute;
-    background-color: #000;
+    background-color: var(--beige);
     bottom: 0;
 }
 
@@ -41,7 +41,7 @@
     transition: 0.2s;
     border-radius: 8px;
     padding: 9px;
-    background-color: #f5f4f4;
+    background-color: var(--beige);
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -57,10 +57,10 @@
     font-family: Assistant, sans-serif;
 }
 
-.project:hover {
+/* .project:hover {
     box-shadow: 10px 10px 0px 4px rgba(41,124,80,1);
     transform: translate(0, -10px);
-}
+} */
 
 .projectDetails {
     display: flex;

@@ -27,8 +27,8 @@ function Greetings() {
                 <div className="textBorder"/>
                 <p>{"A software developer based in Helsinki, Finland. Passionate about solving problems and creating useful apps. I am also a bedroom guitarist, sci-fi & fantasy reader and a video games fan."}</p>
                 <section className="buttons">
-                    <button className="contactButton">{"CONTACT ME"}</button>
-                    <button className="cvButton">{"VIEW CV"}</button>
+                    <button className="myButton">{"CONTACT ME"}</button>
+                    <button className="myButton">{"VIEW CV"}</button>
                 </section>
             </div>
             <img alt={greetPic.alt} src={greetPic.pic}/>

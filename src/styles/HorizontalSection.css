@@ -16,6 +16,7 @@
     display: flex;
     align-items: center;
     overflow: hidden;
+    background-color: #273453;
 }
 
 .scrollable h1 {

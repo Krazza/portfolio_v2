@@ -2,7 +2,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: #f0f0f0;
+    background-color: var(--beige);
 }
 
 
@@ -39,16 +39,17 @@
 
 .title h1 {
     font-size: 3.5rem;
+    color: var(--orange);
 }
 
 .title h3 {
-
+    color: var(--darkBlue);
 }
 
 .textBorder {
     margin-top: 3vh;
     margin-bottom: 3vh;
-    border-top: 4px solid #000;
+    border-top: 4px solid var(--darkBlue);
     width: 9vw;
 }
 
@@ -57,6 +58,7 @@
     font-family: "Assistant", sans-serif;
     font-weight: 500;
     width: 95%;
+    color: var(--darkBlue);
 }
 
 .heroContainer {
@@ -68,6 +70,7 @@
 .tie{
     align-self: center;
     font-family: "Inter", sans-serif;
+    color: var(--darkBlue);
 }
 
 .buttons {
@@ -76,11 +79,20 @@
     margin-top: 2vh;
 }
 
-.contactButton, .cvButton {
+.myButton {
     height: 4em;
     width: 12em;
     font-family: "Inter", sans-serif;
     border-radius: 6px;
     font-weight: bold;
     font-size: 1rem;
+    background-color: var(--orange);
+    color: #b8feff;
+    border-width: 0;
+    transition: 0.2s;
+}
+
+.myButton:hover {
+    box-shadow: 10px 10px 0px 4px var(--darkBlue);
+    transform: translate(0, -10px);
 }

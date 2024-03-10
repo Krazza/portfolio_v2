@@ -17,9 +17,9 @@ function Footer() {
             <section>
                 <h3>{"Hello World, lets connect!"}</h3>
                 <div className="iconContainer">
-                    <a href="https://www.linkedin.com/in/vladislav-muondo-87021a194/" rel="noopener noreferrer" target="_blank"><FaLinkedin className="appIcon"/></a>
-                    <FaDiscord className="appIcon" onClick={discordNotify}/>
-                    <a href="https://www.instagram.com/krazza_em/" rel="noopener noreferrer" target="_blank"><FaInstagramSquare className="appIcon"/></a>
+                    <a href="https://www.linkedin.com/in/vladislav-muondo-87021a194/" rel="noopener noreferrer" target="_blank"><FaLinkedin className="appIcon ln"/></a>
+                    <FaDiscord className="appIcon dc" onClick={discordNotify}/>
+                    <a href="https://www.instagram.com/krazza_em/" rel="noopener noreferrer" target="_blank"><FaInstagramSquare className="appIcon inst"/></a>
                 </div>
             </section>
             <Toaster 
