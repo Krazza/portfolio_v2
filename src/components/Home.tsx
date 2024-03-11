@@ -3,12 +3,14 @@ import "../styles/Home.css";
 import { greetPic } from "../util/Content";
 import HorizontalSection from "./HorizontalSection";
 import About from "./About";
+import Skills from "./Skills";
 
 function Home () {
 
     return(
     <div className="homeContainer">
         <Greetings/>
+        <Skills/>
         <HorizontalSection/>
         <About/>
     </div>
@@ -33,7 +35,7 @@ function Greetings() {
             </div>
             <img alt={greetPic.alt} src={greetPic.pic}/>
         </div>
-        <h2 className="tie">{"⬇️ CHECK OUT MY PROJECTS ⬇️"}</h2>
+        {/* <h2 className="tie">{"⬇️ CHECK OUT MY PROJECTS ⬇️"}</h2> */}
     </div>
     )
 }
