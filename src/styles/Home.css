@@ -86,8 +86,8 @@
     border-radius: 6px;
     font-weight: bold;
     font-size: 1rem;
-    background-color: var(--orange);
-    color: #b8feff;
+    background-color: var(--darkOrange);
+    color: var(--beige);
     border-width: 0;
     transition: 0.2s;
 }

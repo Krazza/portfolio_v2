@@ -4,18 +4,19 @@
     --beige: #f6f0d5;
     --darkBlue: #273453;
     --orange: #ed5212;
-    --cyan: #71c9ca;
-    --darkOrange: #be5426;
-    --darkBeige: #918670;
-    --darkCyan: #5da6a8;
-    --brightCyan: #65e0e0;
-    --darkerBaseOrange: #d84810;
+    --cyan: #33758E;
+    --darkOrange :#C93910;
+
 
 }
 
 * {
     padding: 0;
     margin: 0;
+}
+
+html {
+    scroll-behavior: smooth;
 }
 
 body {

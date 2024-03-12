@@ -1,5 +1,5 @@
 .skillsContainer {
-    height: 60vh;
+    height: 95vh;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -7,7 +7,7 @@
 }
 
 .skillsContainer h2 {
-    margin-top: 4.5vh;
+    margin-top: 15.5vh;
     font-size: 3rem;
     align-self: center;
     color: var(--beige);
@@ -25,7 +25,7 @@
 .skillSection {
     display: flex;
     flex-direction: column;
-    row-gap: 10em;
+    row-gap: 12em;
     height: 100%;
     width: 35vw;
 }
@@ -53,17 +53,17 @@
 }
 
 .FS {
-    background-color: var(--darkCyan);
+    background-color: var(--cyan);
 }
 
 .GD {
-    background-color: var(--darkerBaseOrange);
+    background-color: var(--darkOrange);
 }
 
 .workSection {
     display: flex;
     flex-direction: column;
-    row-gap: 10em;
+    row-gap: 12em;
     height: 100%;
     width: 35vw;
 }
@@ -73,6 +73,13 @@
     font-size: 2rem;
 }
 
+.workSection p {
+    font-size: 1.3rem;
+    font-weight: 500;
+    font-family: "Assistant", sans-serif;
+    color: var(--beige);
+}
+
 .divider {
     width: 4px;
     height: 60%;
@@ -80,12 +87,54 @@
     border-radius: 2px;
 }
 
-.skillSection li {
+.cardUL { 
+    padding-left: 2vw;
+}
+
+.cardUL li {
     font-size: 1.3rem;
     font-weight: 500;
     font-family: "Assistant", sans-serif;
 }
 
-.skillSection ul {
-    padding-left: 2vw;
+.position {
+    display: flex;
+    flex-direction: column;
+    padding: 3%;
+    border-radius: 8px;
+    row-gap: 1vh;
+}
+
+.position p {
+    color: var(--beige);
+    padding-left: 0.35vw;
+}
+
+.GDP h3{
+    color: var(--beige);
+}
+
+.GDP {
+    background-color: var(--darkOrange);
+}
+
+.FE {
+    background-color: var(--cyan);
+}
+
+.workUL li{
+    font-size: 1.3rem;
+    font-weight: 500;
+    font-family: "Assistant", sans-serif;
+    color: var(--beige);
+}
+
+.workUL {
+    padding-left: 1vw;
+}
+
+.expcontainer {
+    display: flex;
+    flex-direction: column;
+    row-gap: 3vh;
 }

@@ -3,7 +3,7 @@ import "../styles/About.css"
 
 function About () {
     return (
-        <div className="about">
+        <div className="about" id="about">
             <div className="aboutInfoBox">
                 <h2>{"About me ✏️"}</h2>
                 <div className="textBorder"/>

@@ -4,11 +4,13 @@ import { greetPic } from "../util/Content";
 import HorizontalSection from "./HorizontalSection";
 import About from "./About";
 import Skills from "./Skills";
+import Header from "./Header";
 
 function Home () {
 
     return(
     <div className="homeContainer">
+        <Header/>
         <Greetings/>
         <Skills/>
         <HorizontalSection/>
@@ -19,7 +21,7 @@ function Home () {
 
 function Greetings() {
     return(
-    <div className="heroContainer">
+    <div className="heroContainer" id="home">
         <div className="greetings">
             <div className="deets">
                 <section className="title">

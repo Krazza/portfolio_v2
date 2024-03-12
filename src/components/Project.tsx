@@ -5,7 +5,7 @@ import { ProjectProps } from "./HorizontalSection";
 
 function Project( {img, alt, projectName, youtube, live, github }: ProjectProps) {
 
-    const colors: string[] = ['#918670', '#be5426', '#62b0b3'];
+    const colors: string[] = ['#31A8D2', '#ED7E41'];
 
     const getRandomIndex = (): number => {
         return Math.floor(Math.random() * colors.length);

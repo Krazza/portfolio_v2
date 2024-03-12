@@ -25,10 +25,10 @@ function HorizontalSection() {
     const x = useTransform(scrollYProgress, [0, 1], ["0%", "-56%"])
     return(
     <section ref={targetRef} className="sectionContainer">
-        <div className="scrollable">
+        <div className="scrollable" id="projects">
             <motion.div style={{ x }} className="motionClass">
                 <Portfolio name="Game Portfolio"/>
-                <Portfolio name="Web portfolio"/>
+                <Portfolio name="Web Portfolio"/>
             </motion.div>
         </div>
     </section>
