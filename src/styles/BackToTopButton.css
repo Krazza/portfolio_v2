@@ -1,0 +1,24 @@
+.back-to-top-button {
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    padding: 10px 20px;
+    background-color: var(--darkOrange);
+    color: var(--beige);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    font-family: "Inter", sans-serif;
+    font-weight: 500;
+    font-size: 1rem;
+  }
+  
+  .back-to-top-button.show {
+    opacity: 1;
+  }
+  
+  .back-to-top-button.hide {
+    opacity: 0;
+  }

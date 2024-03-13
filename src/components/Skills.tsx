@@ -1,9 +1,9 @@
 import React from "react";
-import "../styles/Skills.css"
+import "../styles/Skills.css";
 
 function Skills () {
     return (
-        <div className="skillsContainer">
+        <div className="skillsContainer" id="skexp">
             <div className="content">
                 <section className="skillSection">
                     <h2>{"Skills 🧰"}</h2>

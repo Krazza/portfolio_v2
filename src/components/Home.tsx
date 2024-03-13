@@ -5,16 +5,17 @@ import HorizontalSection from "./HorizontalSection";
 import About from "./About";
 import Skills from "./Skills";
 import Header from "./Header";
+import BackToTopButton from "./ToTopButton";
 
 function Home () {
 
     return(
     <div className="homeContainer">
-        <Header/>
         <Greetings/>
         <Skills/>
         <HorizontalSection/>
         <About/>
+        <BackToTopButton/>
     </div>
     )
 }
@@ -22,6 +23,7 @@ function Home () {
 function Greetings() {
     return(
     <div className="heroContainer" id="home">
+        <Header/>
         <div className="greetings">
             <div className="deets">
                 <section className="title">
