@@ -4,8 +4,7 @@ import Project from "./Project";
 import { PortfolioProps } from "./HorizontalSection";
 import { testProject, testProjectArray } from "../util/Content";
 
-function Portfolio( { name } : PortfolioProps) {
-    const [projectContainer, setProjectContainer] = useState([testProjectArray]);
+function Portfolio( { name, projects } : PortfolioProps) {
     
     return(
         <div className="portfolioContainer">
@@ -15,7 +14,7 @@ function Portfolio( { name } : PortfolioProps) {
             </div>
             <div className="showcase">
                 {
-                    testProjectArray.map( (project, index) => <Project key={index} projectName={project.projectName} img={project.img} alt={project.alt} live={project.live} github={project.github} youtube={project.youtube}/>)
+                    projects.map( (project, index) => <Project key={index} projectName={project.projectName} img={project.img} alt={project.alt} live={project.live} github={project.github} youtube={project.youtube}/>)
                 }
             </div>
         </div>

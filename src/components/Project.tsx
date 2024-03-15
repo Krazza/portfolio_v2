@@ -5,7 +5,7 @@ import { ProjectProps } from "./HorizontalSection";
 
 function Project( {img, alt, projectName, youtube, live, github }: ProjectProps) {
 
-    const colors: string[] = ['#31A8D2', '#ED7E41'];
+    const colors: string[] = ['#C93910', '#31A8D2'];//#ED7E41
 
     const getRandomIndex = (): number => {
         return Math.floor(Math.random() * colors.length);
@@ -24,8 +24,9 @@ function Project( {img, alt, projectName, youtube, live, github }: ProjectProps)
     };
     
     return(
-        <div className="project" onMouseEnter={handleHover} onMouseLeave={handleLeave}>
-            <img className="projectscr" alt={alt} src={img}/>
+        <div className="project" >
+            <img className="projectscr" alt={alt} src={img} onMouseEnter={handleHover} onMouseLeave={handleLeave}/>
+            <div className="projectBorder"/>
             <section className="projectDetails">
                 <h3>{projectName}</h3>
                 { youtube ? <a href={youtube} rel="noopener noreferrer" target="_blank">{"Youtube"}</a> : <></>}

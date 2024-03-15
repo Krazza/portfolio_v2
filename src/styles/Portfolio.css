@@ -33,15 +33,15 @@
     grid-template-rows: 1fr 1fr;
     row-gap: 3em;
     column-gap: 3em;
+    width: 80vw;
 }
 
 .project {
-    width: 40em;
+
     height: auto;
-    transition: 0.2s;
-    border-radius: 8px;
+    
+
     padding: 9px;
-    background-color: var(--beige);
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -50,7 +50,7 @@
 
 .project h3 {
     font-family: Roboto,sans-serif;
-    font-size: 1.3rem;
+    font-size: 1.4rem;
 }
 
 .project p {
@@ -66,12 +66,24 @@
     display: flex;
     column-gap: 1em;
     align-items: center;
+    margin-top: 1vh;
+    color: var(--beige);
 }
 
 .projectscr {
+    margin-bottom: 2vh;
+    border-radius: 8px;
     max-width: 100%;
+    transition: 0.2s;
+    width: 35em;
     height: auto;
     background-color: #959595;
+}
+
+.projectBorder {
+    height: 4px;
+    width: 25%;
+    background-color: var(--beige);
 }
 
 @media screen and (max-width: 1920px) { 
