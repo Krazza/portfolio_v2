@@ -70,6 +70,18 @@
     color: var(--beige);
 }
 
+.projectDetails a {
+    text-decoration: underline;
+    text-underline-offset: 4px;
+    color: var(--brightOrange);
+    font-family: "Roboto",sans-serif;
+    font-weight: 600;
+}
+
+.projectDetails a:hover {
+    color: var(--brightBlue);
+}
+
 .projectscr {
     margin-bottom: 2vh;
     border-radius: 8px;

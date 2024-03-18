@@ -5,6 +5,15 @@ function Skills () {
     return (
         <div className="skillsContainer" id="skexp">
             <div className="content">
+                <SkillSection/>
+                <div className="divider"/>
+                <WorkSection/>
+            </div>
+        </div>
+    )
+
+    function SkillSection () {
+        return (
                 <section className="skillSection">
                     <h2>{"Skills 🧰"}</h2>
                     <div className="skills">
@@ -31,7 +40,11 @@ function Skills () {
                         </div>
                     </div>
                 </section>
-                <div className="divider"/>
+        )
+    }
+
+    function WorkSection() {
+        return (
                 <section className="workSection">
                     <h2>{"Experience 🏢"}</h2>
                     <div className="expcontainer">
@@ -54,9 +67,8 @@ function Skills () {
                         </div>
                     </div>
                 </section>
-            </div>
-        </div>
-    )
+        );
+    }
 }
 
 export default Skills;
