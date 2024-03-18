@@ -20,6 +20,8 @@
     align-items: center;
     height: 100%;
     justify-content: space-around;
+    padding-left: 10%;
+    padding-right: 10%;
 }
 
 .skillSection {
@@ -43,8 +45,8 @@
     height: 30vh;
     width: 17.5vw;
     color: var(--beige);
-    padding: 3% 0 0 0;
     border-radius: 8px;
+    padding: 2%;
 }
 
 .skillsCard h3 {
