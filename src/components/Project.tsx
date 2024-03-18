@@ -2,6 +2,7 @@ import React, {useState} from "react";
 import "../styles/Portfolio.css";
 import { teamBuildPic } from "../util/Content";
 import { ProjectProps } from "./HorizontalSection";
+import { Link } from "react-router-dom";
 
 function Project( {img, alt, projectName, youtube, live, github }: ProjectProps) {
 
@@ -24,16 +25,18 @@ function Project( {img, alt, projectName, youtube, live, github }: ProjectProps)
     };
     
     return(
-        <div className="project" >
-            <img className="projectscr" alt={alt} src={img} onMouseEnter={handleHover} onMouseLeave={handleLeave}/>
-            <div className="projectBorder"/>
-            <section className="projectDetails">
-                <h3>{projectName}</h3>
-                { youtube ? <a href={youtube} rel="noopener noreferrer" target="_blank">{"Youtube"}</a> : <></>}
-                { github ? <a href={github} rel="noopener noreferrer" target="_blank">{"GitHub"}</a> : <></>}
-                { live ? <a href={live} rel="noopener noreferrer" target="_blank">{"Live link"}</a> : <></>}
-            </section>
-        </div>
+            <div className="project" >
+                <Link to="/projectTest">
+                    <img className="projectscr" alt={alt} src={img} onMouseEnter={handleHover} onMouseLeave={handleLeave}/>
+                </Link>
+                <div className="projectBorder"/>
+                <section className="projectDetails">
+                    <h3>{projectName}</h3>
+                    { youtube ? <a href={youtube} rel="noopener noreferrer" target="_blank">{"Youtube"}</a> : <></>}
+                    { github ? <a href={github} rel="noopener noreferrer" target="_blank">{"GitHub"}</a> : <></>}
+                    { live ? <a href={live} rel="noopener noreferrer" target="_blank">{"Live link"}</a> : <></>}
+                </section>
+            </div>
     )
 }
 
