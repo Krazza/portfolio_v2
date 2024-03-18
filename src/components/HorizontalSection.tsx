@@ -1,6 +1,6 @@
 import React, { useRef } from "react";
 import { motion, useTransform, useScroll } from "framer-motion";
-import { WebProjects } from "../util/Content";
+import { WebProjects, GameProjects } from "../util/Content";
 import Portfolio from "./Portfolio";
 import "../styles//HorizontalSection.css";
 
@@ -29,8 +29,8 @@ function HorizontalSection() {
     <section ref={targetRef} className="sectionContainer">
         <div className="scrollable" id="projects">
             <motion.div style={{ x }} className="motionClass">
-                <Portfolio name="Game Portfolio" projects={WebProjects}/>
                 <Portfolio name="Web Portfolio" projects={WebProjects}/>
+                <Portfolio name="Game Portfolio" projects={GameProjects}/>
             </motion.div>
         </div>
     </section>

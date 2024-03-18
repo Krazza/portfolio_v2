@@ -6,6 +6,8 @@ import leaderboardsImg from "../assets/images/Leaderboards_res.png";
 import oldportfolioImg from "../assets/images/srcnn_res.png";
 import colleagueImg_02 from "../assets/images/colleagueFeedback_res.png";
 import habitImg from "../assets/images/Habits_tab_res.png";
+import space from "../assets/images/ss_res.png";
+import wip from "../assets/images/WIP_res.png";
 
 export const teamBuildPic = {
     pic : demoImage,
@@ -26,6 +28,8 @@ export const testProject : ProjectProps = {
     live : "123"
 }
 
+
+// WEB PROJECTS 
 export const gtdPR : ProjectProps = {
     img : gtdImg,
     alt : "game team website",
@@ -69,6 +73,23 @@ export const colleaguePR : ProjectProps = {
     github : "https://github.com/Krazza/Exove_Colleague_Feedback"
 }
 
+// GAME PROJECTS 
+
+export const singularSpace : ProjectProps = {
+    img : space,
+    alt : "Singular Space",
+    projectName : "Singular Space",
+    youtube : "https://youtu.be/Trj1f0gH81Q?si=nCRhRQw37NyZ9WQl"
+}
+
+export const personalProject : ProjectProps = {
+    img : wip,
+    alt : "work in progress",
+    projectName : "Coming soon",
+}
+
+
 export const WebProjects = [gtdPR, leaderboardsPR, teamBuildPR, habitTrackerPR, colleaguePR, oldPortfolioPR];
+export const GameProjects = [singularSpace, personalProject, personalProject, personalProject, personalProject, personalProject];
 
 export const testProjectArray = [testProject, testProject, testProject, testProject, testProject, testProject]

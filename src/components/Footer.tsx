@@ -28,8 +28,8 @@ function Footer() {
                 maxWidth: 500
               }}}
             containerStyle={{
-                bottom: 75,
-                right: 75,
+                bottom: 100,
+                right: 40,
             }}/>
         </footer>
     )
