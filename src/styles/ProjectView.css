@@ -52,3 +52,17 @@
 .tag {
     padding: 0.21em 0.42em;
 }
+
+.dark {
+    background-color: var(--darkBlue);
+    color: var(--beige);
+}
+
+.dark p{
+    color: var(--darkBeige);
+}
+
+.light {
+    background-color: var(--beige);
+    color: var(--darkBlue);
+}

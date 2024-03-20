@@ -28,7 +28,7 @@ function Project( {img, alt, projectName, youtube, live, github, detailedViewLin
             <div className="project" >
                 {
                     detailedViewLink !== "" ?
-                    <Link to={detailedViewLink}>
+                    <Link to={detailedViewLink} target="_blank" rel="noopener noreferrer">
                         <img className="projectscr" alt={alt} src={img} onMouseEnter={handleHover} onMouseLeave={handleLeave}/>
                     </Link> 
                     :

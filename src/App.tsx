@@ -15,8 +15,8 @@ function App() {
 					<Route path="/blog"/>
 				</Route>
 				<Route path="/gameportfolio"/>
-				<Route path="/teambuild" element={<ProjectView images={demo_detailed.images} description={demo_detailed.description} projectName={demo_detailed.projectName} tags={demo_detailed.tags}/>}/>
-				<Route path="/leaderboards" element={<ProjectView images={leaderboards_detailed.images} description={leaderboards_detailed.description} projectName={leaderboards_detailed.projectName} tags={leaderboards_detailed.tags}/>}/>
+				<Route path="/teambuild" element={<ProjectView images={demo_detailed.images} description={demo_detailed.description} projectName={demo_detailed.projectName} tags={demo_detailed.tags} theme={demo_detailed.theme}/>}/>
+				<Route path="/leaderboards" element={<ProjectView images={leaderboards_detailed.images} description={leaderboards_detailed.description} projectName={leaderboards_detailed.projectName} tags={leaderboards_detailed.tags} theme={leaderboards_detailed.theme}/>}/>
 			</Routes>
 		</BrowserRouter>
 	);

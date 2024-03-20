@@ -103,7 +103,8 @@ export const leaderboards_detailed : ProjectViewProps = {
     images : [ldbrIMG],
     projectName : "Valorant Leaderboards (RIOT Games)",
     description : "MongoDB stores the unique player identifiers which are needed to make game-related requests. Each time user visits the leaderboard page, a request (using player identifiers) fetching player data from the backend is made. If cache data exists, server returns it in the response, otherwise, a request to Henrik API is made. Once frontend has the required data, it is displayed on the leaderboard.",
-    tags : [ "JavaScript", "React", "Node.JS", "MongoDB" ]
+    tags : [ "JavaScript", "React", "Node.JS", "MongoDB" ],
+    theme : "light"
 }
 
 const demo_img_01 : ProjectImage = {
@@ -128,7 +129,8 @@ export const demo_detailed : ProjectViewProps = {
     images : [demo_img_01, demo_img_02, demo_img_03, demo_img_04],
     projectName : "Team building tool",
     description: "An assignment created in about 10 hours of work. Planned as a support tool at hackathons and conventions to help people organize and look for teams. Users can apply for open positions in different teams, and teams can view submitted applications.",
-    tags : ["JavaScript", "React", "JSON-server"]
+    tags : ["JavaScript", "React", "JSON-server"],
+    theme : "dark"
 }
 
 export const WebProjects = [gtdPR, leaderboardsPR, teamBuildPR, habitTrackerPR, colleaguePR, oldPortfolioPR];
