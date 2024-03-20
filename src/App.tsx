@@ -3,6 +3,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Layout from "./pages/Layout";
 import Home from './components/Home';
 import ProjectView from './components/ProjectView';
+import { leaderboards_detailed, demo_detailed } from './util/Content';
 import './styles/App.css';
 
 function App() {
@@ -14,8 +15,8 @@ function App() {
 					<Route path="/blog"/>
 				</Route>
 				<Route path="/gameportfolio"/>
-				<Route path="/webportfolio"/>
-				<Route path="/projectTest" element={<ProjectView/>}/>
+				<Route path="/teambuild" element={<ProjectView images={demo_detailed.images} description={demo_detailed.description} projectName={demo_detailed.projectName} tags={demo_detailed.tags}/>}/>
+				<Route path="/leaderboards" element={<ProjectView images={leaderboards_detailed.images} description={leaderboards_detailed.description} projectName={leaderboards_detailed.projectName} tags={leaderboards_detailed.tags}/>}/>
 			</Routes>
 		</BrowserRouter>
 	);

@@ -10,7 +10,8 @@ export type ProjectProps = {
     projectName : string,
     live? : string,
     youtube? : string,
-    github? : string
+    github? : string,
+    detailedViewLink : string
 }
 
 export type PortfolioProps = {

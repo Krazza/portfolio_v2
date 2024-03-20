@@ -4,7 +4,7 @@ import { teamBuildPic } from "../util/Content";
 import { ProjectProps } from "./HorizontalSection";
 import { Link } from "react-router-dom";
 
-function Project( {img, alt, projectName, youtube, live, github }: ProjectProps) {
+function Project( {img, alt, projectName, youtube, live, github, detailedViewLink }: ProjectProps) {
 
     const colors: string[] = ['#C93910', '#31A8D2'];//#ED7E41
 
@@ -26,9 +26,14 @@ function Project( {img, alt, projectName, youtube, live, github }: ProjectProps)
     
     return(
             <div className="project" >
-                <Link to="/projectTest">
+                {
+                    detailedViewLink !== "" ?
+                    <Link to={detailedViewLink}>
+                        <img className="projectscr" alt={alt} src={img} onMouseEnter={handleHover} onMouseLeave={handleLeave}/>
+                    </Link> 
+                    :
                     <img className="projectscr" alt={alt} src={img} onMouseEnter={handleHover} onMouseLeave={handleLeave}/>
-                </Link>
+                }
                 <div className="projectBorder"/>
                 <section className="projectDetails">
                     <h3>{projectName}</h3>
