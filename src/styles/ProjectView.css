@@ -9,12 +9,14 @@
 
 .imgContainer {
     width: 70%;
-    min-height: 100vh;
+
     grid-column-gap: 3em;
     grid-row-gap: 3em;
     flex-direction: column;
     justify-content: center;
     display: flex;
+    padding-top: 3em;
+    padding-bottom: 3em;
 }
 
 .imgContainer img {
@@ -28,12 +30,12 @@
     width: 30%;
     min-height: 100vh;
     grid-column-gap: 1em;
-    grid-row-gap: 1em;
+    grid-row-gap: 2em;
     flex-direction: column;
     justify-content: center;
     align-self: flex-start;
     align-items: flex-start;
-    padding-left: 12.5%;
+    padding-left: 10%;
     padding-right: 6%;
     display: flex;
     position: -webkit-sticky;
@@ -42,7 +44,24 @@
     right: 0;
 }
 
+.detailsContainer p {
+    font-size: 1.4rem;
+    font-family: "Assistant", sans-serif;
+    font-weight: 600;
+}
+
+.detailsContainer h2 {
+    font-size: 2.2rem;
+}
+
+.detailsContainer h3 {
+    font-size: 1.7rem;
+}
+
 .tags {
+    font-size: 1.4rem;
+    font-family: "Assistant", sans-serif;
+    font-weight: 500;
     grid-column-gap: 0.58em;
     grid-row-gap: 0.58em;
     flex-wrap: wrap;
@@ -50,11 +69,12 @@
 }
 
 .tag {
-    padding: 0.21em 0.42em;
+    padding: 0.2em 0.4em;
 }
 
 .dark {
-    background-color: var(--darkBlue);
+    background: rgb(35,47,75);
+    background: linear-gradient(0deg, rgba(35,47,75,1) 0%, rgba(39,52,83,1) 10%, rgba(39,52,83,1) 90%, rgba(35,47,75,1) 100%);
     color: var(--beige);
 }
 
@@ -62,7 +82,44 @@
     color: var(--darkBeige);
 }
 
-.light {
-    background-color: var(--beige);
+.dark li {
+    list-style: none;
+    border-radius: 6px;
     color: var(--darkBlue);
+    background-color: var(--beige);
+}
+
+.light {
+    /* background-color: var(--beige); */
+    color: var(--darkBlue);
+    background: rgb(200,195,167);
+    background: linear-gradient(0deg, rgba(200,195,167,1) 0%, rgba(246,240,213,1) 10%, rgba(234,228,201,1) 90%, rgba(200,195,167,1) 100%);
+}
+
+.light p{
+    color: var(--darkBlue);
+}
+
+.light li {
+    list-style: none;
+    border-radius: 6px;
+    color: var(--beige);
+    background-color: var(--darkBlue);
+}
+
+.dark a, .light a {
+    text-decoration: underline 4px;
+    text-underline-offset: 4px;
+    color: var(--brightOrange);
+    font-family: "Roboto",sans-serif;
+    font-weight: 600;
+    font-size: 1.4rem;
+}
+
+.dark a:hover {
+    color: var(--brightBlue);
+}
+
+.light a:hover {
+    color: var(--cyan)
 }

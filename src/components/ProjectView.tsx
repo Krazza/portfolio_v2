@@ -12,10 +12,11 @@ export type ProjectViewProps = {
     description : string,
     projectName : string,
     tags : Array<string>,
-    theme : string
+    theme : string,
+    github? : string
 }
 
-function ProjectView ({images, description, projectName, tags, theme} : ProjectViewProps) {
+function ProjectView ({images, description, projectName, tags, theme, github} : ProjectViewProps) {
     return (
         <div className={`projectWrap ${theme}`}>
             <div className="imgContainer">
@@ -25,15 +26,17 @@ function ProjectView ({images, description, projectName, tags, theme} : ProjectV
             </div> 
             <div className="detailsContainer">
                 <h2>{projectName}</h2>
-                <div className="tags">
+                <ul className="tags">
                     {
-                        tags.map((tag, index) => <div key={index} className="tag">{tag}</div>)
+                        tags.map((tag, index) => <li key={index} className="tag">{tag}</li>)
                     }
-                </div>
+                </ul>
                 <div className="projectDescription">
-                    <h3>{"Description"}</h3>
                     <p>{description}</p>
                 </div>
+                {
+                    github ? <a href={github} rel="noopener noreferrer" target="_blank">{"GitHub"}</a> : <></>
+                }
             </div>
         </div>
     )

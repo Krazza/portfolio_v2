@@ -16,6 +16,11 @@ import demoIMG_02 from "../assets/detailedViewImages/demoIMG_02.png";
 import demoIMG_03 from "../assets/detailedViewImages/demoIMG_03.png";
 import demoIMG_04 from "../assets/detailedViewImages/demoIMG_04.png";
 
+import grdIMG_01 from "../assets/detailedViewImages/gtd_b_01.png";
+import grdIMG_02 from "../assets/detailedViewImages/gtd_b_02.png";
+import grdIMG_03 from "../assets/detailedViewImages/gtd_b_03.png";
+import grdIMG_04 from "../assets/detailedViewImages/gtd_b_04.png";
+
 export const teamBuildPic = {
     pic : demoImage,
     alt : "team building tool"
@@ -31,7 +36,7 @@ export const gtdPR : ProjectProps = {
     img : gtdImg,
     alt : "game team website",
     projectName : "Game Team Website",
-    detailedViewLink : "/leaderboards"
+    detailedViewLink : "/gtd"
 }
 
 export const leaderboardsPR : ProjectProps = {
@@ -101,10 +106,11 @@ const ldbrIMG : ProjectImage = {
 
 export const leaderboards_detailed : ProjectViewProps = {
     images : [ldbrIMG],
-    projectName : "Valorant Leaderboards (RIOT Games)",
-    description : "MongoDB stores the unique player identifiers which are needed to make game-related requests. Each time user visits the leaderboard page, a request (using player identifiers) fetching player data from the backend is made. If cache data exists, server returns it in the response, otherwise, a request to Henrik API is made. Once frontend has the required data, it is displayed on the leaderboard.",
+    projectName : "Leaderboards (RIOT Games) 🕹️",
+    description : "A personal MERN-stack project created to compare in-game ratings and player statistics of our small friend group. Build using unofficial game API and official Riot Games API. MongoDB stores the unique player identifiers which are needed to make game-related requests. Each time user visits the leaderboard page, a request (using player identifiers) fetching player data from the backend is made. If cache data exists, server returns it in the response, otherwise, a request to Henrik API is made. Once frontend has the required data, it is displayed on the leaderboard.",
     tags : [ "JavaScript", "React", "Node.JS", "MongoDB" ],
-    theme : "light"
+    theme : "light",
+    github : "https://github.com/Krazza/Leaderboards_VAL",
 }
 
 const demo_img_01 : ProjectImage = {
@@ -127,10 +133,36 @@ const demo_img_04 : ProjectImage = {
 
 export const demo_detailed : ProjectViewProps = {
     images : [demo_img_01, demo_img_02, demo_img_03, demo_img_04],
-    projectName : "Team building tool",
+    projectName : "Team building tool 👔",
     description: "An assignment created in about 10 hours of work. Planned as a support tool at hackathons and conventions to help people organize and look for teams. Users can apply for open positions in different teams, and teams can view submitted applications.",
     tags : ["JavaScript", "React", "JSON-server"],
-    theme : "dark"
+    theme : "dark",
+    github : "https://github.com/Krazza/Demo_task"
+}
+
+const gtd_img_01 : ProjectImage = {
+    image : grdIMG_01,
+    alt : "hero page"
+}
+const gtd_img_02 : ProjectImage = {
+    image : grdIMG_02,
+    alt : "about the course"
+}
+const gtd_img_03 : ProjectImage = {
+    image : grdIMG_03,
+    alt : "meet the team"
+}
+const gtd_img_04 : ProjectImage = {
+    image : grdIMG_04,
+    alt : "testimonials"
+}
+
+export const gtd_detailed : ProjectViewProps = {
+    images : [gtd_img_01, gtd_img_02, gtd_img_03, gtd_img_04],
+    projectName : "Game team website 👔",
+    description: "Worked on this project as a part of my internship with TUTORS Oy. A website meant to introduce newcomers to a game developing division of the company.",
+    tags : ["TypeScript", "React", "Vite", "Figma", "Github Actions"],
+    theme : "dark",
 }
 
 export const WebProjects = [gtdPR, leaderboardsPR, teamBuildPR, habitTrackerPR, colleaguePR, oldPortfolioPR];
