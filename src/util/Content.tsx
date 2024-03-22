@@ -21,6 +21,19 @@ import grdIMG_02 from "../assets/detailedViewImages/gtd_b_02.png";
 import grdIMG_03 from "../assets/detailedViewImages/gtd_b_03.png";
 import grdIMG_04 from "../assets/detailedViewImages/gtd_b_04.png";
 
+import habitIMG_01 from "../assets/detailedViewImages/habit_b_01.png";
+import habitIMG_02 from "../assets/detailedViewImages/habit_b_02.png";
+import habitIMG_03 from "../assets/detailedViewImages/habit_b_03.png";
+import habitIMG_04 from "../assets/detailedViewImages/habit_b_04.png";
+
+import teamIMG_01 from "../assets/detailedViewImages/team_b_01.png";
+import teamIMG_02 from "../assets/detailedViewImages/team_b_04.png";
+import teamIMG_03 from "../assets/detailedViewImages/team_b_05.png";
+import teamIMG_04 from "../assets/detailedViewImages/team_b_06.png";
+import teamIMG_05 from "../assets/detailedViewImages/team_b_07.png";
+
+import oldIMG_01 from "../assets/detailedViewImages/old_b.png";
+
 export const teamBuildPic = {
     pic : demoImage,
     alt : "team building tool"
@@ -61,7 +74,7 @@ export const habitTrackerPR : ProjectProps = {
     alt : "Habit Tracker app",
     projectName : "Habit tracker app",
     github : "https://github.com/Krazza/HabitTrackerApp",
-    detailedViewLink : "/leaderboards"
+    detailedViewLink : "/habits"
 }
 
 export const oldPortfolioPR : ProjectProps = {
@@ -70,7 +83,7 @@ export const oldPortfolioPR : ProjectProps = {
     projectName : "Old website",
     github : "https://github.com/Krazza/PortfolioProject_React",
     live : "https://symphonious-squirrel-2e92aa.netlify.app/",
-    detailedViewLink : "/leaderboards"
+    detailedViewLink : "/oldwebsite"
 }
 
 export const colleaguePR : ProjectProps = {
@@ -78,7 +91,7 @@ export const colleaguePR : ProjectProps = {
     alt : "Colleague feedback system",
     projectName : "Colleague feedback system",
     github : "https://github.com/Krazza/Exove_Colleague_Feedback",
-    detailedViewLink : "/leaderboards"
+    detailedViewLink : "/exove"
 }
 
 // GAME PROJECTS 
@@ -106,7 +119,7 @@ const ldbrIMG : ProjectImage = {
 
 export const leaderboards_detailed : ProjectViewProps = {
     images : [ldbrIMG],
-    projectName : "Leaderboards (RIOT Games) 🕹️",
+    projectName : "Leaderboards app (RIOT Games) 🕹️",
     description : "A personal MERN-stack project created to compare in-game ratings and player statistics of our small friend group. Build using unofficial game API and official Riot Games API. MongoDB stores the unique player identifiers which are needed to make game-related requests. Each time user visits the leaderboard page, a request (using player identifiers) fetching player data from the backend is made. If cache data exists, server returns it in the response, otherwise, a request to Henrik API is made. Once frontend has the required data, it is displayed on the leaderboard.",
     tags : [ "JavaScript", "React", "Node.JS", "MongoDB" ],
     theme : "light",
@@ -163,6 +176,79 @@ export const gtd_detailed : ProjectViewProps = {
     description: "Worked on this project as a part of my internship with TUTORS Oy. A website meant to introduce newcomers to a game developing division of the company.",
     tags : ["TypeScript", "React", "Vite", "Figma", "Github Actions"],
     theme : "dark",
+}
+
+const habit_img_01 : ProjectImage = {
+    image : habitIMG_01,
+    alt : "habits"
+}
+const habit_img_02 : ProjectImage = {
+    image : habitIMG_02,
+    alt : "tasks"
+}
+const habit_img_03 : ProjectImage = {
+    image : habitIMG_03,
+    alt : "mood"
+}
+const habit_img_04 : ProjectImage = {
+    image : habitIMG_04,
+    alt : "error page"
+}
+
+export const habit_detailed : ProjectViewProps = {
+    images : [habit_img_01, habit_img_02, habit_img_03, habit_img_04],
+    projectName : "Habit tracker app (MVP)🎯",
+    description: "Habit-Tracker is an application that helps you to keep up with your daily habits. Made in a team as a part of a school project.",
+    tags : ["JavaScript", "React", "Figma", "Bootstrap", "Firebase", "Firestore"],
+    theme : "light",
+    github : "https://github.com/Krazza/HabitTrackerApp",
+}
+
+
+const team_img_01 : ProjectImage = {
+    image : teamIMG_01,
+    alt : "log in page"
+}
+const team_img_02 : ProjectImage = {
+    image : teamIMG_02,
+    alt : "admin desk"
+}
+const team_img_03 : ProjectImage = {
+    image : teamIMG_03,
+    alt : "questionaire 1"
+}
+const team_img_04 : ProjectImage = {
+    image : teamIMG_04,
+    alt : "questionaire 2"
+}
+
+const team_img_05 : ProjectImage = {
+    image : teamIMG_05,
+    alt : "feedback screen"
+}
+
+export const team_detailed : ProjectViewProps = {
+    images : [team_img_05, team_img_01, team_img_02, team_img_03, team_img_04,],
+    projectName : "Exove team feedback app",
+    description: "Habit-Tracker is an application that helps you to keep up with your daily habits. Made in a team as a part of a school project.",
+    tags : ["TypeScript", "React", "Figma", "MongoDB", "LDAP"],
+    theme : "dark",
+    github : "https://github.com/Krazza/Exove_Colleague_Feedback",
+}
+
+const old_img_01 : ProjectImage = {
+    image : oldIMG_01,
+    alt : "old website home page"
+}
+
+export const old_detailed : ProjectViewProps = {
+    images : [old_img_01],
+    projectName : "Personal website",
+    description: "Old portfolio website.",
+    tags : ["JavaScript", "React"],
+    theme : "dark",
+    github : "https://github.com/Krazza/PortfolioProject_React",
+    live : "https://symphonious-squirrel-2e92aa.netlify.app/",
 }
 
 export const WebProjects = [gtdPR, leaderboardsPR, teamBuildPR, habitTrackerPR, colleaguePR, oldPortfolioPR];

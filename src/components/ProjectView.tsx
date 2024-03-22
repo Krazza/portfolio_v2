@@ -13,10 +13,12 @@ export type ProjectViewProps = {
     projectName : string,
     tags : Array<string>,
     theme : string,
-    github? : string
+    github? : string,
+    live? : string,
+    youtube? : string
 }
 
-function ProjectView ({images, description, projectName, tags, theme, github} : ProjectViewProps) {
+function ProjectView ({images, description, projectName, tags, theme, github, live, youtube} : ProjectViewProps) {
     return (
         <div className={`projectWrap ${theme}`}>
             <div className="imgContainer">
@@ -34,9 +36,9 @@ function ProjectView ({images, description, projectName, tags, theme, github} : 
                 <div className="projectDescription">
                     <p>{description}</p>
                 </div>
-                {
-                    github ? <a href={github} rel="noopener noreferrer" target="_blank">{"GitHub"}</a> : <></>
-                }
+                { github ? <a href={github} rel="noopener noreferrer" target="_blank">{"GitHub"}</a> : <></> }
+                { live ? <a href={live} rel="noopener noreferrer" target="_blank">{"Live link"}</a> : <></> }
+                { youtube ? <a href={live} rel="noopener noreferrer" target="_blank">{"Youtube"}</a> : <></> }
             </div>
         </div>
     )
