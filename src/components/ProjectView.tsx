@@ -36,9 +36,11 @@ function ProjectView ({images, description, projectName, tags, theme, github, li
                 <div className="projectDescription">
                     <p>{description}</p>
                 </div>
+                <section className="linkSection">
                 { github ? <a href={github} rel="noopener noreferrer" target="_blank">{"GitHub"}</a> : <></> }
                 { live ? <a href={live} rel="noopener noreferrer" target="_blank">{"Live link"}</a> : <></> }
-                { youtube ? <a href={live} rel="noopener noreferrer" target="_blank">{"Youtube"}</a> : <></> }
+                { youtube ? <a href={youtube} rel="noopener noreferrer" target="_blank">{"Youtube"}</a> : <></> }
+                </section>
             </div>
         </div>
     )

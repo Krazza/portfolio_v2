@@ -123,3 +123,8 @@
 .light a:hover {
     color: var(--cyan)
 }
+
+.linkSection {
+    display: flex;
+    column-gap: 2vw;
+}

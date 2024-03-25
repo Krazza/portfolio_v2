@@ -34,6 +34,10 @@ import teamIMG_05 from "../assets/detailedViewImages/team_b_07.png";
 
 import oldIMG_01 from "../assets/detailedViewImages/old_b.png";
 
+import space_01 from "../assets/detailedViewImages/singular_space_01_b.png";
+import space_02 from "../assets/detailedViewImages/singular_space_02_b.png";
+import space_03 from "../assets/detailedViewImages/singular_space_03_b.png";
+
 export const teamBuildPic = {
     pic : demoImage,
     alt : "team building tool"
@@ -101,7 +105,7 @@ export const singularSpace : ProjectProps = {
     alt : "Singular Space",
     projectName : "Singular Space",
     youtube : "https://youtu.be/Trj1f0gH81Q?si=nCRhRQw37NyZ9WQl",
-    detailedViewLink : "/leaderboards"
+    detailedViewLink : "/space"
 }
 
 export const personalProject : ProjectProps = {
@@ -124,6 +128,7 @@ export const leaderboards_detailed : ProjectViewProps = {
     tags : [ "JavaScript", "React", "Node.JS", "MongoDB" ],
     theme : "light",
     github : "https://github.com/Krazza/Leaderboards_VAL",
+    live : "https://leaderboards-5b8x.onrender.com/"
 }
 
 const demo_img_01 : ProjectImage = {
@@ -173,7 +178,7 @@ const gtd_img_04 : ProjectImage = {
 export const gtd_detailed : ProjectViewProps = {
     images : [gtd_img_01, gtd_img_02, gtd_img_03, gtd_img_04],
     projectName : "Game team website 👔",
-    description: "Worked on this project as a part of my internship with TUTORS Oy. A website meant to introduce newcomers to a game developing division of the company.",
+    description: "Contributed to this project as a part of my Front-end internship with TUTORS Oy. A website meant to introduce newcomers to a game developing division of the company.",
     tags : ["TypeScript", "React", "Vite", "Figma", "Github Actions"],
     theme : "dark",
 }
@@ -230,7 +235,7 @@ const team_img_05 : ProjectImage = {
 export const team_detailed : ProjectViewProps = {
     images : [team_img_05, team_img_01, team_img_02, team_img_03, team_img_04,],
     projectName : "Exove team feedback app",
-    description: "Habit-Tracker is an application that helps you to keep up with your daily habits. Made in a team as a part of a school project.",
+    description: `As a final assignment for our vocational course at Business College Helsinki, we were tasked with creating a system for giving and collecting colleague feedback. Requiremnts for the system were provided by Exove, a partner company to the Business College Helsinki.`,
     tags : ["TypeScript", "React", "Figma", "MongoDB", "LDAP"],
     theme : "dark",
     github : "https://github.com/Krazza/Exove_Colleague_Feedback",
@@ -249,6 +254,28 @@ export const old_detailed : ProjectViewProps = {
     theme : "dark",
     github : "https://github.com/Krazza/PortfolioProject_React",
     live : "https://symphonious-squirrel-2e92aa.netlify.app/",
+}
+
+const space_img_01 : ProjectImage = {
+    image : space_01,
+    alt : "space battle"
+}
+const space_img_02 : ProjectImage = {
+    image : space_02,
+    alt : "spaceship"
+}
+const space_img_03 : ProjectImage = {
+    image : space_03,
+    alt : "space fortress"
+}
+
+export const space_detailed : ProjectViewProps = {
+    images : [space_img_03, space_img_02, space_img_01],
+    projectName : "Singular Space",
+    description: "Mobile multiplayer real time strategy game. For more details, visit the youtube link mentioned below or contact me personally, thank you.",
+    tags : ["UE 4", "Blueprints", "C++", "Maya/3D Max"],
+    theme : "light",
+    youtube : "https://www.youtube.com/watch?v=Trj1f0gH81Q"
 }
 
 export const WebProjects = [gtdPR, leaderboardsPR, teamBuildPR, habitTrackerPR, colleaguePR, oldPortfolioPR];
