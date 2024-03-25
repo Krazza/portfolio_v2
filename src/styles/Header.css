@@ -40,3 +40,9 @@ header a {
 .horizontalMenu li:hover {
     transform: scale(1.3);
 }
+
+@media screen and (max-width: 500px) { 
+    .myHeader {
+        display: none;
+    }
+}

@@ -4,7 +4,7 @@ import "../styles/Header.css";
 
 function Header () {
     return(
-        <header>
+        <header className="myHeader">
             <ul className="horizontalMenu">
                 <li><a href="#skexp">{"Skills & Experience"}</a></li>
                 <li><a href="#projects">{"Portfolios"}</a></li>
