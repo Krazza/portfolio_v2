@@ -1,0 +1,10 @@
+.MPContainer {
+    display: flex;
+    flex-direction: column;
+}
+
+.mobileProjects {
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+}

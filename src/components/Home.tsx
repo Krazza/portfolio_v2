@@ -6,14 +6,24 @@ import About from "./About";
 import Skills from "./Skills";
 import Header from "./Header";
 import BackToTopButton from "./ToTopButton";
+import { useMediaQuery } from 'react-responsive';
+import MobilePortfolio from "./MobilePortfolio";
+import { WebProjects, GameProjects } from "../util/Content";
 
 function Home () {
+
+    const isMobile = useMediaQuery({query: '(max-width: 500px)'})
 
     return(
     <div className="homeContainer">
         <Greetings/>
         <Skills/>
-        <HorizontalSection/>
+        {
+            isMobile ? <div className="MPContainer">
+                <MobilePortfolio name="Web Portfolio" projects={WebProjects}/>
+                <MobilePortfolio name="Game Portfolio" projects={GameProjects}/>
+            </div> : <HorizontalSection/>
+        }
         <About/>
         <BackToTopButton/>
     </div>
