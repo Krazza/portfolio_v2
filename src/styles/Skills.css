@@ -140,3 +140,59 @@
     flex-direction: column;
     row-gap: 3vh;
 }
+
+@media screen and (max-width: 500px) {
+
+    .skillsContainer {
+        height: fit-content;
+    }
+
+    .content {
+        flex-direction: column;
+        height: fit-content;
+    } 
+
+    .skillSection, .workSection {
+        height: 100vh;
+        width: 100%;
+        row-gap: 8vh;
+        margin: 5vh 0 5vh 0;
+        justify-content: flex-start;
+    }
+
+    .skills {
+        align-items: center;
+        flex-direction: column;
+        row-gap: 5vh;
+    }
+
+    .skillsCard, .position {
+        width: 90%;
+        height: fit-content;
+        padding: 3vh 2vw 3vh 2vw;
+    }
+
+    .skillsContainer h2 {
+        margin: 0;
+    }
+
+    .divider {
+        display: none;
+    }
+
+    .cardUL, .workUL {
+        padding-left: 10%;
+    }
+
+    .expcontainer {
+        align-items: center;
+    }
+
+    .position h3 {
+        text-align: center;
+    }
+
+    .position {
+        row-gap: 3vh;
+    }
+}
