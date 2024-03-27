@@ -91,10 +91,10 @@
 
 .cardUL { 
     padding-left: 2vw;
+    font-size: 1.3rem;
 }
 
 .cardUL li {
-    font-size: 1.3rem;
     font-weight: 500;
     font-family: "Assistant", sans-serif;
 }
@@ -125,13 +125,13 @@
 }
 
 .workUL li{
-    font-size: 1.3rem;
     font-weight: 500;
     font-family: "Assistant", sans-serif;
     color: var(--beige);
 }
 
 .workUL {
+    font-size: 1.3rem;
     padding-left: 1vw;
 }
 
@@ -169,7 +169,8 @@
     .skillsCard, .position {
         width: 90%;
         height: fit-content;
-        padding: 3vh 2vw 3vh 2vw;
+        padding: 3vh 3vw 3vh 3vw;
+        font-size: 1.5rem;
     }
 
     .skillsContainer h2 {
@@ -182,6 +183,10 @@
 
     .cardUL, .workUL {
         padding-left: 10%;
+    }
+
+    .cardUL, .workUL li {
+        font-size: 1.5rem;
     }
 
     .expcontainer {

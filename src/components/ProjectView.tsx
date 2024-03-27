@@ -23,7 +23,7 @@ function ProjectView ({images, description, projectName, tags, theme, github, li
         <div className={`projectWrap ${theme}`}>
             <div className="imgContainer">
                 {
-                    images.map((image, index) => <img alt={image.alt} src={image.image}/>)
+                    images.map((image, index) => <img key={index} alt={image.alt} src={image.image}/>)
                 } 
             </div> 
             <div className="detailsContainer">

@@ -1,6 +1,5 @@
 import React, {useState} from "react";
 import "../styles/Portfolio.css";
-import { teamBuildPic } from "../util/Content";
 import { ProjectProps } from "./HorizontalSection";
 import { Link } from "react-router-dom";
 

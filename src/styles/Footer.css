@@ -49,3 +49,9 @@ footer section {
 .dc {
     color: var(--cyan);
 }
+
+@media screen and (max-width: 500px) {
+    footer h3 {
+        font-size: 1.8rem;
+    }
+}

@@ -28,3 +28,16 @@
     flex-direction: column;
     row-gap: 2.5vh;
 }
+
+@media screen and (max-width: 500px) { 
+    .about {
+        height: fit-content;
+        margin: 5vh 0 5vh 0;
+    }
+
+    .aboutInfoBox p{
+        font-size: 1.5rem;
+        text-align: justify;
+        font-weight: 600;
+    }
+}

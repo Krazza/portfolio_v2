@@ -280,3 +280,4 @@ export const space_detailed : ProjectViewProps = {
 
 export const WebProjects = [gtdPR, leaderboardsPR, teamBuildPR, habitTrackerPR, colleaguePR, oldPortfolioPR];
 export const GameProjects = [singularSpace, personalProject, personalProject, personalProject, personalProject, personalProject];
+export const MobileViewGameProjects = [singularSpace];
