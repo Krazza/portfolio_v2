@@ -103,3 +103,10 @@
         width: 30em;
     }
 }
+
+@media screen and (min-width: 1300px) and (max-width: 1800px){
+    .showcase {
+        width: fit-content;
+    }
+    
+}

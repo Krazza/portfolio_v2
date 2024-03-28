@@ -13,7 +13,7 @@ import "../styles/MobileProjects.css";
 
 function Home () {
 
-    const isMobile = useMediaQuery({query: '(max-width: 500px)'})
+    const isMobile = useMediaQuery({query: '(min-width: 350px) and (max-width: 1300px)'})
 
     return(
     <div className="homeContainer">

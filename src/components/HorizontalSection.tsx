@@ -1,6 +1,7 @@
-import React, { useRef } from "react";
+import React, { useRef, useState } from "react";
 import { motion, useTransform, useScroll } from "framer-motion";
 import { WebProjects, GameProjects } from "../util/Content";
+import { useMediaQuery } from "react-responsive";
 import Portfolio from "./Portfolio";
 import "../styles//HorizontalSection.css";
 
@@ -20,12 +21,17 @@ export type PortfolioProps = {
 }
 
 function HorizontalSection() {
+
+    const isSmallDesktop = useMediaQuery({query: '(min-width: 1300px) and (max-width: 1800px)'})
+
+    const [transformVar, setTransformVar] = useState(isSmallDesktop ? "-69%" : "-56%");
+
     const targetRef = useRef<HTMLDivElement | null>(null);
     const { scrollYProgress } = useScroll({
         target: targetRef,
     });
 
-    const x = useTransform(scrollYProgress, [0, 1], ["0%", "-56%"])
+    const x = useTransform(scrollYProgress, [0, 1], ["0%", transformVar])
     return(
     <section ref={targetRef} className="sectionContainer">
         <div className="scrollable" id="projects">

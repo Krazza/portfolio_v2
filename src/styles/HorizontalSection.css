@@ -36,3 +36,12 @@
     align-self: center;
 }
 
+.alt {
+    display: flex;
+    height: fit-content;
+    flex-direction: column;
+}
+
+@media screen and (min-width: 1300px) and (max-width: 1800px){
+    
+}

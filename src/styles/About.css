@@ -5,6 +5,7 @@
     align-items: center;
     justify-content: center;
     background-color: var(--beige);
+    padding: 5vh 0 5vh 0;
 }
 
 .about h2 {
@@ -21,6 +22,7 @@
     font-family: "Assistant", sans-serif;
     font-weight: 500;
     color: var(--darkBlue);
+
 }
 
 .aboutInfoBox section {
@@ -29,7 +31,7 @@
     row-gap: 2.5vh;
 }
 
-@media screen and (max-width: 500px) { 
+@media screen and (min-width: 350px) and (max-width: 1300px) { 
     .about {
         height: fit-content;
         margin: 5vh 0 5vh 0;
@@ -39,5 +41,10 @@
         font-size: 1.5rem;
         text-align: justify;
         font-weight: 600;
+        
+    }
+
+    .aboutInfoBox {
+        width: 90%;
     }
 }
