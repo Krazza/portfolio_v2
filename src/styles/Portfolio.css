@@ -108,5 +108,17 @@
     .showcase {
         width: fit-content;
     }
+
+    .project {
+        width: 22em;
+        padding: 0;
+    }
     
+    .portfolioContainer {
+        row-gap: 3vh;
+    }
+
+    .projectscr {
+        margin: 0;
+    }
 }

@@ -202,3 +202,23 @@
         row-gap: 3vh;
     }
 }
+
+@media screen and (min-width: 1300px) and (max-width: 1800px) {
+    .skillsContainer {
+        height: fit-content;
+    }
+
+    .skillsContainer h2 {
+        margin-top: 5vh;
+    }
+
+    .skills, .expcontainer{ 
+        height: 70vh;
+    }
+
+    .workSection, .skillSection {
+        row-gap: 10vh;
+    }
+
+    
+}
