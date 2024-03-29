@@ -1,6 +1,5 @@
 import React from "react";
 import "../styles/ProjectView.css";
-import { Link } from "react-router-dom";
 
 export type ProjectImage = {
     image : string,

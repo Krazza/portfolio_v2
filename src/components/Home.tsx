@@ -8,7 +8,7 @@ import Header from "./Header";
 import BackToTopButton from "./ToTopButton";
 import { useMediaQuery } from 'react-responsive';
 import MobilePortfolio from "./MobilePortfolio";
-import { WebProjects, GameProjects, MobileViewGameProjects } from "../util/Content";
+import { WebProjects, MobileViewGameProjects } from "../util/Content";
 import "../styles/MobileProjects.css";
 
 function Home () {

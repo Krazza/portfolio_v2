@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import React from "react";
 import "../styles/Portfolio.css";
 import { ProjectProps } from "./HorizontalSection";
 import { Link } from "react-router-dom";

@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import "../styles/Portfolio.css";
 import Project from "./Project";
 import { PortfolioProps } from "./HorizontalSection";
