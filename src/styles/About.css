@@ -31,7 +31,7 @@
     row-gap: 2.5vh;
 }
 
-@media screen and (min-width: 350px) and (max-width: 1300px) { 
+@media screen and (min-width: 350px) and (max-width: 1279px) { 
     .about {
         height: fit-content;
         margin: 5vh 0 5vh 0;
@@ -46,5 +46,12 @@
 
     .aboutInfoBox {
         width: 90%;
+    }
+}
+
+@media screen and (min-width: 1279px) and (max-width: 1536px) { 
+
+    .about {
+        height: 100vh;
     }
 }

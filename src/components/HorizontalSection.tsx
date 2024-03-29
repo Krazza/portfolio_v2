@@ -22,9 +22,10 @@ export type PortfolioProps = {
 
 function HorizontalSection() {
 
-    const isSmallDesktop = useMediaQuery({query: '(min-width: 1300px) and (max-width: 1800px)'})
+    const isLaptop = useMediaQuery({ query: "(min-width: 1280px) and (max-width: 1366px)"})
+    const isDesktop = useMediaQuery({query: '(min-width: 1366px)'})
 
-    const [transformVar, setTransformVar] = useState(isSmallDesktop ? "-69%" : "-56%");
+    const [transformVar, setTransformVar] = useState(isDesktop ? "-56%" : isLaptop ? "-60%" : "-56%");
 
     const targetRef = useRef<HTMLDivElement | null>(null);
     const { scrollYProgress } = useScroll({

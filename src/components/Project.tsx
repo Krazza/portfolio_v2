@@ -38,7 +38,7 @@ function Project( {img, alt, projectName, youtube, live, github, detailedViewLin
                     <h3>{projectName}</h3>
                     { youtube ? <a href={youtube} rel="noopener noreferrer" target="_blank">{"Youtube"}</a> : <></>}
                     { github ? <a href={github} rel="noopener noreferrer" target="_blank">{"GitHub"}</a> : <></>}
-                    { live ? <a href={live} rel="noopener noreferrer" target="_blank">{"Live link"}</a> : <></>}
+                    { live ? <a href={live} rel="noopener noreferrer" target="_blank">{"Live"}</a> : <></>}
                 </section>
             </div>
     )

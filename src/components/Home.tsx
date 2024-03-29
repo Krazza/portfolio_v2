@@ -13,7 +13,7 @@ import "../styles/MobileProjects.css";
 
 function Home () {
 
-    const isMobile = useMediaQuery({query: '(min-width: 350px) and (max-width: 1300px)'})
+    const isMobile = useMediaQuery({query: '(min-width: 350px) and (max-width: 1279px)'})
 
     return(
     <div className="homeContainer">
@@ -32,6 +32,13 @@ function Home () {
 }
 
 function Greetings() {
+
+    function OpenMail()
+    {
+        window.location.href = "mailto:muondove@gmail.com?subject=Intern/Junior%20position&body=Hello_World;";
+    }
+
+
     return(
     <div className="heroContainer" id="home">
         <Header/>
@@ -44,8 +51,8 @@ function Greetings() {
                 <div className="textBorder"/>
                 <p>{"A software developer based in Helsinki, Finland. Passionate about solving problems and creating useful apps. I am also a bedroom guitarist, sci-fi & fantasy reader and a video games fan."}</p>
                 <section className="buttons">
-                    <button className="myButton">{"CONTACT ME"}</button>
-                    <button className="myButton">{"VIEW CV"}</button>
+                    <button className="myButton" onClick={OpenMail}>{"CONTACT ME"}</button>
+                    <a href="https://docs.google.com/document/d/1ytQBhYQuQYSdYEquLYx8n8dqUQ93UmT7iCycKPhhpIY/edit?usp=sharing" rel="noopener noreferrer" target="_blank"><button className="myButton">{"VIEW CV"}</button></a>
                 </section>
             </div>
             <img alt={greetPic.alt} src={greetPic.pic}/>

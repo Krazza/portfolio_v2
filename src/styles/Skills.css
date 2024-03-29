@@ -141,7 +141,7 @@
     row-gap: 3vh;
 }
 
-@media screen and (min-width: 350px) and (max-width: 1300px) {
+@media screen and (min-width: 350px) and (max-width: 1279px) {
 
     .skillsContainer {
         height: fit-content;
@@ -203,7 +203,7 @@
     }
 }
 
-@media screen and (min-width: 1300px) and (max-width: 1800px) {
+@media screen and (min-width: 1279px) and (max-width: 1800px) {
     .skillsContainer {
         height: fit-content;
     }
@@ -221,4 +221,23 @@
     }
 
     
+}
+
+@media screen and (min-width: 1279px) and (max-width: 1536px) {
+    .skillsCard h3 {
+        font-size: 1.5rem;
+    }
+
+    .cardUL {
+        font-size: 1.2rem;
+    }
+
+    .workSection h3 {
+        font-size: 1.5rem;
+    }
+
+    .workUL {
+        font-size: 1.2rem;
+        padding-left: 2vw;
+    }
 }
