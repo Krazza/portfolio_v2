@@ -1,4 +1,4 @@
-import React, { useRef, useState } from "react";
+import React, { useRef } from "react";
 import { motion, useTransform, useScroll } from "framer-motion";
 import { WebProjects, GameProjects } from "../util/Content";
 import { useMediaQuery } from "react-responsive";
@@ -25,7 +25,7 @@ function HorizontalSection() {
     const isLaptop = useMediaQuery({ query: "(min-width: 1280px) and (max-width: 1366px)"})
     const isDesktop = useMediaQuery({query: '(min-width: 1366px)'})
 
-    const transformVar = useState(isDesktop ? "-56%" : isLaptop ? "-60%" : "-56%");
+    const transformVar = isDesktop ? "-56%" : isLaptop ? "-60%" : "-56%";
 
     const targetRef = useRef<HTMLDivElement | null>(null);
     const { scrollYProgress } = useScroll({
