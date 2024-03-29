@@ -9,7 +9,6 @@
 
 .imgContainer {
     width: 70%;
-
     grid-column-gap: 3em;
     grid-row-gap: 3em;
     flex-direction: column;
@@ -162,7 +161,7 @@
         min-height: fit-content;
         margin: 5vh 0 5vh 0;
         align-items: center;
-        justify-content: start;
+        justify-content: flex-start;
         padding: 0;
         width: 100%;
         flex-direction: column;
